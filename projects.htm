@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMI Studios | Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header class="navbar glass">
+        <div class="logo">VMI Studios</div>
+
+        <nav class="nav-links">
+            <a href="index.htm">Home</a>
+            <a href="projects.htm" class="active">Projects</a>
+            <a href="services.htm">Services</a>
+            <a href="about.htm">About</a>
+            <a href="contact.htm">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="shuffleBtn" class="shuffle-btn">Shuffle</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-small">
+            <div class="hero-inner glass">
+                <h1>Our Featured Works</h1>
+                <p class="subtitle">Bold ideas turned into real results - curated projects from VMI Studios</p>
+            </div>
+        </section>
+
+        <section class="projects-controls container">
+
+            <div class="filters glass">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="photo">Photography</button>
+            </div>
+
+            <div class="promo-jargon class">
+                <strong>Studio Jargon</strong>
+                <p>Next-level visual storytelling. Smart design for fast creators. Digital craft for brand impact</p>
+            </div>
+        </section>
+
+        <section class="gallery container" id="gallery">
+            <!--Project cards created by JS or can be filled server-side-->
+        </section>
+
+        <section class="more-work container">
+            <button id="loadMore" class="cta glass">Load more</button>
+        </section>
+
+        <!--Project Modal-->
+        <div class="modal" id="projectModal">
+            <div class="modal-content glass">
+                <button id="closeModal" class="modal-close">Close</button>
+                <div class="modal-body">
+                    <img src="" alt="project preview" id="modalImg">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDesc"></p>
+                    <ul id="modalMeta"></ul>
+                    <a href="#" id="modalCTA" class="btn" target="_blank">View Case</a>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p> &copy;2025 VMI Studios. All Rights Reserved.</p>
+    </footer>
+
+    <script src="projects.js"></script>
+</body>
+</html>
